@@ -1,0 +1,13 @@
+{
+    "name": "Trello List Count",
+    "description": "See how much cards are in a list on trello.com",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "run_at": "document_end",
+            "js": ["src/showlist.js"],
+            "matches": ["https://trello.com/b/*/*", "https://*.trello.com/b/*/*"]
+        }
+    ]
+}
